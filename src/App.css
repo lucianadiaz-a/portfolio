@@ -1,10 +1,17 @@
+@font-face {
+  font-family: 'luluFont';
+  src: url('assets/fonts/font.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body, html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   background-color: #ffffff;
   color: #000000;
-  font-family: Arial, sans-serif;
+  font-family: luluFont, sans-serif;
   text-transform: lowercase;
 }
 
