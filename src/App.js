@@ -1,19 +1,39 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import About from './pages/About';
+import Work from './pages/Work';
+import Contact from './pages/Contact';
 import './App.css';
-import Home from './pages/Home';
-import Project from './pages/Project';
 
 const App = () => {
   return (
     <Router>
       <div className="app">
-        <Routes>
-          {/* Home Page */}
-          <Route path="/" element={<Home />} />
-          {/* Dynamic Project Pages */}
-          <Route path="/projects/:id" element={<Project />} />
-        </Routes>
+        <div className="container">
+          <header>
+            <div>luciana diaz albadan</div>
+            <nav>
+              <ul style={{ display: 'flex', listStyle: 'none', margin: 0, padding: 0 }}>
+                <li style={{ marginRight: '15px' }}>
+                  <Link to="/">about</Link>
+                </li>
+                <li style={{ marginRight: '15px' }}>
+                  <Link to="/work">work</Link>
+                </li>
+                <li>
+                  <Link to="/contact">contact</Link>
+                </li>
+              </ul>
+            </nav>
+          </header>
+          <main>
+            <Routes>
+              <Route path="/" element={<About />} />
+              <Route path="/work" element={<Work />} />
+              <Route path="/contact" element={<Contact />} />
+            </Routes>
+          </main>
+        </div>
       </div>
     </Router>
   );
