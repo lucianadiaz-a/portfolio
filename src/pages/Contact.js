@@ -4,7 +4,8 @@ const Contact = () => {
   return (
     <div>
       <h2>Contact</h2>
-      <p>You can reach me at: email@example.com</p>
+      <p>i´m constantly online but mostly on LinkedIn</p>
+      <p>shoot me a dm if you want to chat</p>
     </div>
   );
 };
