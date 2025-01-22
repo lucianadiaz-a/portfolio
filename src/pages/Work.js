@@ -1,23 +1,26 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Routes, Route } from 'react-router-dom';
+import Website from './projects/Website';
 
 const Work = () => {
   const projects = [
-    { id: 1, name: 'Project 1' },
-    { id: 2, name: 'Project 2' },
-    { id: 3, name: 'Project 3' },
+    { id: 1, name: 'www.lucianadiaz.xyz', path: '/work/projects/1' },
   ];
 
   return (
     <div>
       <h2>Work</h2>
-      <ul>
+      <ul style={{ listStyle: 'none', padding: 0 }}>
         {projects.map((project) => (
           <li key={project.id}>
-            <Link to={`/work/projects/${project.id}`}>{project.name}</Link>
+            <Link to={project.path}>{project.name}</Link>
           </li>
         ))}
       </ul>
+
+      <Routes>
+        <Route path="/work/projects/1" element={<Website />} />
+      </Routes>
     </div>
   );
 };

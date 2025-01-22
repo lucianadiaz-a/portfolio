@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import About from './pages/About';
 import Work from './pages/Work';
 import Contact from './pages/Contact';
+import Website from './pages/projects/Website';
 import './App.css';
 
 const App = () => {
@@ -31,6 +32,7 @@ const App = () => {
               <Route path="/" element={<About />} />
               <Route path="/work" element={<Work />} />
               <Route path="/contact" element={<Contact />} />
+              <Route path="/work/projects/1" element={<Website />} />
             </Routes>
           </main>
         </div>
