@@ -29,6 +29,33 @@ header {
   padding: 1rem 0;
 }
 
+/* Link styles */
+header nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+header nav ul li {
+  margin-right: 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: black; /* Default color */
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+header nav ul li a:visited,
+header nav ul li a:active {
+  color: black; /* Prevent color change */
+  text-decoration: none;
+}
+
 header h1 {
   font-size: 3rem;
   margin: 1rem 0;
