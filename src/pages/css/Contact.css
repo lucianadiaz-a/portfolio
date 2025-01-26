@@ -1,0 +1,12 @@
+.contact-container {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .contact-link{
+    color: gray;
+}
+
+.contact-link:hover {
+    color: gray;
+}
